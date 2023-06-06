@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html, body, #root {
+  margin: 0; /*  המרחק של האובייקט כלפי חוץ  */
+  padding: 0; /*  המרחק של האובייקטים הפנימיים כלפי האובייקט עצמו  */
+  height: 100%; /* כל המסך */
+  text-align: center; /* שכל הטקסטים יהיו במרכז */
+  color: rgb(28, 18, 18);
+  background-image: linear-gradient(45deg, lightblue, white);
+}
+/*
+html{
+  overflow:scroll;
+  scroll-behavior: smooth;
+}
+*/
+
+a {
+  color: blue;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Box {
+  display: inline-block;
+  text-align: left;
+  border: 2px dashed black;  /*  מקווקו */
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}
+
+.SolidBox {
+  display: inline-block;
+  text-align: left;
+  border: 2px solid black;  /*  מדגיש את התיבה המסומנת */
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
 }

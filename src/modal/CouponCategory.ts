@@ -1,0 +1,13 @@
+export enum CouponCategory {
+    FOOD = "FOOD",
+    VACATION = "VACATION",
+    HOTELS = "HOTELS",
+    ELECTRICITY = "ELECTRICITY",
+    RESTAURANT = "RESTAURANT",
+    SPA = "SPA",
+    ATTRACTIONS = "ATTRACTIONS",
+    CLOTHING = "CLOTHING",
+    BOWLING = "BOWLING",
+    OTHER = "OTHER",
+    ALL = "ALL",
+}

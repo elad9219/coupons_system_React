@@ -1,0 +1,21 @@
+.mainLayout {
+	height: 100%;
+    box-sizing: border-box;  /*   פותר תאימות של דפדפנים אחורה */
+    display: grid;
+    grid-template-rows: 15% 80% 5%;  /* שלוש שורות לפי יחס הגודל הרצוי לפי הסדר */
+    grid-template-columns: repeat(6, 1fr);  /* שישה טורים מחולקים שווה בשווה */
+}
+
+.mainLayout>header,.mainLayout>footer {
+    grid-column: span 6;   /* מיזוג של 6 תאים */
+}
+
+.mainLayout>main {
+    grid-column: span 5; /* הגדרת המסך הראשי כ-5 מתוך 6 לפי היחס. זה יגדיר אוטומטית את מה שנשאר כ-1 מתוך 6. */
+    height: 100%;
+    overflow: auto;
+}
+
+.mainLayout,.mainLayout>* {
+    border: 1px solid black;
+}
